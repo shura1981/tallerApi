@@ -36,7 +36,7 @@ class ArticuloController extends Controller
      */
     public function store(Request $request)
     {
-        // Articulo::create($request->all());
+        
         $articulo = new Articulo();
         $articulo->description = $request->description;
         $articulo->price = $request->price;
